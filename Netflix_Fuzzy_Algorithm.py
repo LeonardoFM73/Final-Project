@@ -5,6 +5,9 @@ import math
 import copy
 
 netflix = pd.read_csv('netflix_titles.csv')
-X = netflix.iloc[:, 1:].values
+
+print(netflix)
+
+netflix=netflix.dropna(axis=0)
 
 print(netflix)
